@@ -86,6 +86,8 @@ def create_draft(run,publication,methodology_url):
             write(state_path,state)
         content=content.replace(f'../results/figures/{name}.png',image_state['url'])
     title=content.splitlines()[0].removeprefix('# ')
+    # Hashnode renders the title separately from the article body.
+    content=content.split('\n',1)[1].lstrip('\n')
     if '{{' in content or '../' in content:
         raise ValueError('Online article contains unresolved links or placeholders')
     if state.get('draft_id'):
