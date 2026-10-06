@@ -27,13 +27,8 @@ def figures(run,output):
         plt.close(fig)
     fig,ax=plt.subplots(figsize=(10,4.8))
     values=np.array([m['primary']['ece'] for m in final])
-    cis=np.array([m['primary']['ci']['ece'] for m in final])
-    # Percentile intervals need not contain the point estimate. Plot endpoints.
     x=np.arange(len(names))
     ax.bar(x,values*100,color='#377eb8')
-    ax.vlines(x,cis[:,0]*100,cis[:,1]*100,color='black')
-    ax.scatter(x,cis[:,0]*100,marker='_',color='black')
-    ax.scatter(x,cis[:,1]*100,marker='_',color='black')
     ax.set(xticks=x,xticklabels=names,ylabel='ECE (percentage points)',title='Final COCO split: emitted scores ≥0.25, IoU ≥0.50')
     ax.tick_params(axis='x',rotation=25)
     save(fig,'calibration_comparison')

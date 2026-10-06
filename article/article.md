@@ -28,13 +28,13 @@ Each model kept its usual image processing and box filtering. Inference used FP3
 
 Expected calibration error, or ECE, gives one summary of the mismatch. Scores are divided into 15 equal-width groups. Each group’s average confidence is compared with its share of correct detections. ECE combines the absolute gaps, giving larger groups more weight. Lower ECE is better.
 
-![Calibration error for all five detectors, with 95% confidence intervals.](../results/figures/calibration_comparison.png)
+![Calibration error for all five detectors before correction.](../results/figures/calibration_comparison.png)
 
 **YOLOv3** had the lowest final ECE: **2.55 percentage points**. YOLOv3 has lower estimated ECE than all three recent candidates in this run. This resembles [Guo’s finding](https://arxiv.org/html/1706.04599#S3): newer models can be less calibrated than older ones, even when detection or classification improves.
 
 Why might this happen? Guo linked poorer calibration to larger networks, batch normalization, and weaker penalties on large weights. Training can also increase confidence without improving correctness. These are possible explanations, not proven causes here: model sizes and training differ. Guo’s newer classifiers were often overconfident; YOLO26n was underconfident. The similar pattern concerns calibration error, not the direction of the score mismatch.
 
-The error bars come from 1,000 samples drawn by image, keeping all detections from each image together. Nearby estimates should be treated cautiously. Extra checks change the score threshold, overlap requirement, and number of groups. The [full methodology and tables](../README.md) also include recall, negative log likelihood, and Brier score. The latter two measure probability errors in other ways, so the conclusion does not depend only on ECE.
+Confidence intervals in the full tables come from 1,000 samples drawn by image, keeping all detections from each image together. Nearby estimates should be treated cautiously. Extra checks change the score threshold, overlap requirement, and number of groups. The [full methodology and tables](../README.md) also include recall, negative log likelihood, and Brier score. The latter two measure probability errors in other ways, so the conclusion does not depend only on ECE.
 
 ![Before calibration: detection quality versus calibration error, using each model’s original scores.](../results/figures/quality_vs_calibration.png)
 

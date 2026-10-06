@@ -1,10 +1,6 @@
 {
   "publication_id": "6ac5198f755f8dfd2cdaa62b",
   "images": {
-    "calibration_comparison": {
-      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/b10b38e2-73bb-4995-833c-41a832082267.png",
-      "sha256": "a0b16e1d87a3a14a9961904efd111ed8f39eda48a15fbdbf1aebb741b3332675"
-    },
     "quality_vs_calibration": {
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/c2f065bf-b49c-437f-b353-3b670681d6f0.png",
       "sha256": "1bb7ff4fa01629e39b7c3f17fb574760accd2394c577619ffc9c8c694e981f9b"
@@ -16,16 +12,25 @@
     "correction": {
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/f410d7a3-ebf9-4fc4-b3a0-05f5fbb7cfd7.png",
       "sha256": "19bc345b11790f13564579c8db740bb0db51ac1169f96af97d72caa9014b04df"
+    },
+    "calibration_comparison": {
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/8017de39-ef88-45cd-ae7e-6020b5747122.png",
+      "sha256": "65aab3ec31e5c440724845d4c5ba82309449efc6c48187956c4bc06b2e81130b"
     }
   },
   "draft_id": "6ac51af4b529b95499063e47",
   "verified": true,
-  "content_hash": "ad3c7509676d56c43e8d9246bb48cb56df8bc9b4fcf7e6e72c10ab9516a694c0",
+  "content_hash": "420e96ed768220a236d3ec1249c71bec41cba5b3d595e34e987372bee74fed87",
   "superseded_images": [
     {
       "name": "correction",
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/7e8fd363-d971-47a0-ac08-4cd8fd389726.png",
       "sha256": "d634d765ceb3f00d0b62ed4701f3169f102eebee296088d1b13b1b20e5864b71"
+    },
+    {
+      "name": "calibration_comparison",
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/b10b38e2-73bb-4995-833c-41a832082267.png",
+      "sha256": "a0b16e1d87a3a14a9961904efd111ed8f39eda48a15fbdbf1aebb741b3332675"
     }
   ]
 }
