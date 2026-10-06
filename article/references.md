@@ -19,3 +19,5 @@ Accessed 2026-10-07. Live RunPod quotes must be retrieved again immediately befo
 - RunPod pod REST API: https://docs.runpod.io/api-reference/pods/POST/pods
 
 Architecture dates in the registry are family introduction dates. Checkpoint release dates remain unknown unless verified from upstream metadata; a download date is not a checkpoint date.
+
+Guo section 3 discusses model depth and width, batch normalization, weight decay, and confidence increasing after training classifications are already correct: https://arxiv.org/html/1706.04599#S3. These findings concern classifiers; the detector benchmark does not establish their causal role. YOLO26n is underconfident on the primary population, unlike the paper’s prominent overconfidence examples.
