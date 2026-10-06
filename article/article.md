@@ -34,6 +34,10 @@ Expected calibration error, or ECE, gives one summary of the mismatch. Scores ar
 
 The error bars come from 1,000 samples drawn by image, keeping all detections from each image together. Nearby estimates should be treated cautiously. Extra checks change the score threshold, overlap requirement, and number of groups. The [full methodology and tables](../README.md) also include recall, negative log likelihood, and Brier score. The latter two measure probability errors in other ways, so the conclusion does not depend only on ECE.
 
+![Before calibration: detection quality versus calibration error, using each model’s original scores.](../results/figures/quality_vs_calibration.png)
+
+This chart shows the models before any score correction. Higher mAP means better detection; lower ECE means more reliable confidence. YOLO26n’s point uses its original ECE of 16.64 percentage points. The next section shows how that changes after correction.
+
 ## A small correction with a large effect
 
 Among YOLO26n, YOLO11n, and RF-DETR Nano, **YOLO26n** had the highest ECE on the selection images. That choice was saved before fitting any correction. The selected checkpoint’s ECE interval does not overlap the other two candidate intervals.
@@ -47,8 +51,6 @@ The corrections were fitted by minimizing negative log likelihood. Five rounds o
 On the final test images, the chosen method reduced ECE from **16.64** to **1.31 percentage points**. The change was **-15.33**, with a paired 95% interval of **[-16.20, -13.77]** points. Negative log likelihood fell from **0.4936** to **0.4103**. The interval supports an improvement for these detections.
 
 The comparison kept the same **10893 detections**, selected using their original scores. The 0.25 threshold was not applied again after correction. Correctness stayed at **78.45%**, and mAP stayed unchanged. The correction changed confidence, not the boxes or the objects found.
-
-![Detection quality versus calibration error: higher mAP means better detection, while lower ECE means more reliable confidence.](../results/figures/quality_vs_calibration.png)
 
 ## Using this in practice
 
