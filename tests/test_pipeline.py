@@ -44,8 +44,8 @@ def test_end_to_end_resume_report_and_freezes(tmp_path):
         assert result['rankings_unchanged'] and result['fixed_precision_unchanged']
     article=report(run,tmp_path/'figures')
     assert article.exists() and 'SYNTHETIC' in article.read_text()
-    assert len(list((tmp_path/'figures').glob('*.png')))==5
-    assert len(list((tmp_path/'figures').glob('*.svg')))==5
+    assert len(list((tmp_path/'figures').glob('*.png')))==6
+    assert len(list((tmp_path/'figures').glob('*.svg')))==6
     old=read(run/'summary.json')
     assert evaluate(run,ann)==old
     assert select(run)==selection

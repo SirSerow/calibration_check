@@ -68,6 +68,17 @@ def figures(run,output):
         ax.axvline(0,color='gray',linestyle='--')
         ax.set(yticks=[0,1],yticklabels=list(correction['methods']),xlabel='After minus before',title=metric.upper())
     save(fig,'metric_changes')
+    fig,ax=plt.subplots(figsize=(10,4.8))
+    y=np.arange(len(names))
+    labels={'yolo26n':'YOLO26n','yolo11n':'YOLO11n','rfdetr_nano':'RF-DETR Nano','yolox_s':'YOLOX-S','yolov3':'YOLOv3'}
+    confidence=ax.barh(y-.18,[m['primary']['mean_confidence']*100 for m in final],height=.34,color='#377eb8',label='Average confidence')
+    precision=ax.barh(y+.18,[m['primary']['precision']*100 for m in final],height=.34,color='#e58a24',label='Correct detections')
+    for bars in (confidence,precision):
+        ax.bar_label(bars,fmt='%.1f%%',padding=4,fontsize=10)
+    ax.set(yticks=y,yticklabels=[labels.get(name,name) for name in names],xlim=(0,100),xlabel='Percent',title='How confident is the detector — and how often is it right?')
+    ax.invert_yaxis()
+    ax.legend(loc='upper center',bbox_to_anchor=(.5,-.18),ncol=2,frameon=False)
+    save(fig,'confidence_vs_precision')
 
 
 def reliability(ax,bins,title):
@@ -89,9 +100,9 @@ def render_article(run,template='article/article.template.md'):
         return f'{100*x:.2f}'
     uncertainty=read(run/'selection.json')['overlapping_ece_intervals']
     lo,hi=result['paired_delta_ci']['ece']
-    conclusion=('The ECE interval supports an improvement on this fixed population.' if hi<0 else
-                'The ECE interval supports a deterioration on this fixed population.' if lo>0 else
-                'The ECE change is inconclusive: its paired interval includes zero.')
+    conclusion=('The interval supports an improvement for these detections.' if hi<0 else
+                'The interval supports worse calibration for these detections.' if lo>0 else
+                'The result is uncertain because the interval includes zero.')
     older=[final['yolov3']['ece']]
     recent=[final[k]['ece'] for k in ('yolo26n','yolo11n','rfdetr_nano')]
     age_result=('YOLOv3 has lower estimated ECE than all three recent candidates in this run.' if max(older)<min(recent) else
@@ -107,6 +118,9 @@ def render_article(run,template='article/article.template.md'):
                 parameters=', '.join(f'{k}={v:.5f}' for k,v in result['parameters'].items() if isinstance(v,float)),
                 conclusion=conclusion,selection_uncertainty=('Selection intervals overlap for '+', '.join(uncertainty)+'. Treat the ranking as uncertain.' if uncertainty else 'The selected checkpoint’s ECE interval does not overlap the other two candidate intervals.'),
                 methodology='../README.md',figure_prefix='../results/figures')
+    display={'yolo26n':'YOLO26n','yolo11n':'YOLO11n','rfdetr_nano':'RF-DETR Nano','yolox_s':'YOLOX-S','yolov3':'YOLOv3','platt':'Platt correction','temperature':'temperature correction'}
+    for key in ('selected','chosen','best'):
+        values[key]=display.get(values[key],values[key])
     article=Path(template).read_text()
     for key,value in values.items():
         article=article.replace('{{'+key+'}}',value)

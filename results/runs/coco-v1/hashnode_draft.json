@@ -12,9 +12,13 @@
     "quality_vs_calibration": {
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/c2f065bf-b49c-437f-b353-3b670681d6f0.png",
       "sha256": "1bb7ff4fa01629e39b7c3f17fb574760accd2394c577619ffc9c8c694e981f9b"
+    },
+    "confidence_vs_precision": {
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/34772ba1-f5a0-4feb-876c-1f9d6d635e3f.png",
+      "sha256": "9e3ee21d67345ec8c7b057b731b0d386deafbb42dfb865e48e3f7755540545f3"
     }
   },
   "draft_id": "6ac51af4b529b95499063e47",
   "verified": true,
-  "content_hash": "121ef66c066e901e5c2225651bf8335b9089ccb33e830041d0b197f75491ba0d"
+  "content_hash": "78335bd91b740d193ae079eb72961e9776c90e67cc1455b0a3cd34d6b3f4e9f4"
 }

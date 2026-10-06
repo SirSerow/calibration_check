@@ -63,7 +63,7 @@ def create_draft(run,publication,methodology_url):
     if state['publication_id']!=publication:
         raise ValueError('Draft belongs to a different publication')
     content=article.read_text().replace('../README.md',methodology_url)
-    for name in ['calibration_comparison','correction','quality_vs_calibration']:
+    for name in ['confidence_vs_precision','calibration_comparison','correction','quality_vs_calibration']:
         path=Path('results/figures')/(name+'.png')
         fingerprint=sha256(path)
         image_state=state['images'].get(name)
