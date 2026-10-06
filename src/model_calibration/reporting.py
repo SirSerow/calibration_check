@@ -56,8 +56,7 @@ def figures(run,output):
     fig,axes=plt.subplots(1,3,figsize=(15,4.8))
     reliability(axes[0],correction['before']['bins'],'Original: '+correction['model_id'])
     for ax,(method,result) in zip(axes[1:],correction['methods'].items()):
-        label=method+(' (chosen by calibration CV)' if method==correction['selected_method'] else '')
-        reliability(ax,result['after']['bins'],label)
+        reliability(ax,result['after']['bins'],method)
     save(fig,'correction')
     fig,axes=plt.subplots(1,3,figsize=(13,4))
     for ax,metric in zip(axes,['ece','nll','brier']):

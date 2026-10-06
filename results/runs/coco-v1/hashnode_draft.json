@@ -5,10 +5,6 @@
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/b10b38e2-73bb-4995-833c-41a832082267.png",
       "sha256": "a0b16e1d87a3a14a9961904efd111ed8f39eda48a15fbdbf1aebb741b3332675"
     },
-    "correction": {
-      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/7e8fd363-d971-47a0-ac08-4cd8fd389726.png",
-      "sha256": "d634d765ceb3f00d0b62ed4701f3169f102eebee296088d1b13b1b20e5864b71"
-    },
     "quality_vs_calibration": {
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/c2f065bf-b49c-437f-b353-3b670681d6f0.png",
       "sha256": "1bb7ff4fa01629e39b7c3f17fb574760accd2394c577619ffc9c8c694e981f9b"
@@ -16,9 +12,20 @@
     "confidence_vs_precision": {
       "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/34772ba1-f5a0-4feb-876c-1f9d6d635e3f.png",
       "sha256": "9e3ee21d67345ec8c7b057b731b0d386deafbb42dfb865e48e3f7755540545f3"
+    },
+    "correction": {
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/f410d7a3-ebf9-4fc4-b3a0-05f5fbb7cfd7.png",
+      "sha256": "19bc345b11790f13564579c8db740bb0db51ac1169f96af97d72caa9014b04df"
     }
   },
   "draft_id": "6ac51af4b529b95499063e47",
   "verified": true,
-  "content_hash": "3a32541e9907a946f36da17bfe9be310306b214e8a9c0c44a088dec43e4e408f"
+  "content_hash": "2af80774cdf28bfc3c80bab63e3d542dafd1a6ff2a31e5ce8bc3495d25a4da84",
+  "superseded_images": [
+    {
+      "name": "correction",
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/7e8fd363-d971-47a0-ac08-4cd8fd389726.png",
+      "sha256": "d634d765ceb3f00d0b62ed4701f3169f102eebee296088d1b13b1b20e5864b71"
+    }
+  ]
 }
