@@ -1,0 +1,5 @@
+1. **Calibration comparison** — Final-partition precision ECE at original scores ≥0.25, correct-class COCO IoU ≥0.50, 15 equal-width bins. Bars show point estimates; whiskers show 95% image-bootstrap percentile intervals (1,000 samples). Specific checkpoint and native inference comparisons.
+2. **Correction** — Selected checkpoint before correction, temperature correction, and positive-slope Platt correction. The method chosen by grouped calibration validation is labeled. All panels use the same final detection population; no corrected-score filtering.
+3. **Detection quality and calibration** — COCO mAP on the cached ≥0.001 scores versus ECE on original ≥0.25 scores. Association does not establish a causal effect of architecture age.
+
+Supplement: reliability_all pairs reliability curves and original-confidence histograms for all five models; metric_changes shows paired intervals for after-minus-before ECE, NLL, and Brier. Empty confidence bins have no plotted estimates. All figures export to PNG and SVG.

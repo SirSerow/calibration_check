@@ -1,0 +1,21 @@
+{
+  "model_id": "yolov3",
+  "passed": true,
+  "native_reference": "Darknet CLI with letter_box",
+  "images": [
+    {
+      "image_id": 139,
+      "comparison_threshold": 0.005001,
+      "detections": 100,
+      "maximum_box_error_pixels": 0.00046215637212299043,
+      "maximum_score_error": 4.965634346071335e-07
+    },
+    {
+      "image_id": 285,
+      "comparison_threshold": 0.005001,
+      "detections": 2,
+      "maximum_box_error_pixels": 0.00044522265625346336,
+      "maximum_score_error": 3.62525939934244e-07
+    }
+  ]
+}

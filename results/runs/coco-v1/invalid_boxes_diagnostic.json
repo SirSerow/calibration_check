@@ -1,0 +1,24 @@
+{
+  "image": {
+    "license": 4,
+    "file_name": "000000204329.jpg",
+    "coco_url": "http://images.cocodataset.org/val2017/000000204329.jpg",
+    "height": 640,
+    "width": 425,
+    "date_captured": "2013-11-20 17:06:20",
+    "flickr_url": "http://farm9.staticflickr.com/8390/8563707718_d9db30e1bb_z.jpg",
+    "id": 204329
+  },
+  "bad": [
+    {
+      "box": [
+        208.9007568359375,
+        223.61190795898438,
+        212.1805419921875,
+        223.31649780273438
+      ],
+      "score": 0.0032482692040503025,
+      "category_id": 9
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "python": "3.10.12",
+  "host": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.3",
+    "pycocotools": "2.0.10"
+  },
+  "source_sha256": {
+    "matching.py": "e2454f2d780d0386bf1704423f994012810070dbc55836013e33ffc46a23937d",
+    "pipeline.py": "18e35be5199ff5e0f58d93eb8835e4023fdedc90e930f19976a975b1e3e26748",
+    "metrics.py": "b6abc4ff192ba914a950b0e85e2df09561b8c0ecdab1711601dbb31c52b351dd",
+    "cli.py": "8c9deeffbdd4e9cf4486b5eacb5f953ba5fd38a11ab3a919a023f8e7b8dd4dd7",
+    "__init__.py": "0b8fe49b7c398f06051387c51a61193d0cc0ca92e82c6e2ec3dc0711f22d4b3e",
+    "environment.py": "732ba7a28166ad07565190224b3429fc646748cb1670fa13938a75cd26b508c3",
+    "io.py": "c6136c1560fb26ff3f80723ae7ec64d496e5411ccb6c7f2b66d70ce76a908c47",
+    "reporting.py": "789311469359b384c0acd4f09b1838a9d9282def37160d949fd5c0550fe4a2dd",
+    "__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "hashnode.py": "507efe0640881d688ade855fada5f126d756240082f1c43baa504670b80a84b6",
+    "adapters.py": "aed1a52c4282bbae6b1a9b89f76bbb2d15738ad457f79aacf1b55ebe5847fbc2",
+    "fitting.py": "68610640111ce55c8234fa2c39be9993051e01a7101d2be70017c102d2f898b0",
+    "acquisition.py": "0131d0624efef986281bfc44cd2aeb1829fde410beaa0084a615137414f70c09"
+  },
+  "protocol_hash": "1508815895aac2becd008a0a7a02dfdb398439e67e9fefa7b918c7eb8f4c54da",
+  "elapsed_seconds": 167.50515731599808,
+  "completed_at": 1791311041.878
+}

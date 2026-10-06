@@ -1,0 +1,10 @@
+{
+  "yolo26n": "/workspace/model-calibration/.venv-ultralytics/bin/python",
+  "yolo11n": "/workspace/model-calibration/.venv-ultralytics/bin/python",
+  "rfdetr_nano": "/workspace/model-calibration/.venv-rfdetr/bin/python",
+  "ssd300": "/workspace/model-calibration/.venv-ssd/bin/python",
+  "yolox_s": "/workspace/model-calibration/.venv-yolox/bin/python",
+  "rtmdet_tiny": "/workspace/model-calibration/.venv-mmdet/bin/python",
+  "picodet_s": "/workspace/model-calibration/.venv-paddle/bin/python",
+  "yolov3": "/workspace/model-calibration/.venv-darknet/bin/python"
+}

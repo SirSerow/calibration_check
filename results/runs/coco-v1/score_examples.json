@@ -1,0 +1,58 @@
+{
+  "model_id": "yolo26n",
+  "selected_method": "platt",
+  "examples": {
+    "temperature": [
+      {
+        "original_score": 0.25,
+        "corrected_score": 0.18938188045354634
+      },
+      {
+        "original_score": 0.5,
+        "corrected_score": 0.5
+      },
+      {
+        "original_score": 0.75,
+        "corrected_score": 0.8106181195464538
+      },
+      {
+        "original_score": 0.9,
+        "corrected_score": 0.9482435893528739
+      },
+      {
+        "original_score": 0.95,
+        "corrected_score": 0.9801015383950663
+      },
+      {
+        "original_score": 0.99,
+        "corrected_score": 0.99772095520046
+      }
+    ],
+    "platt": [
+      {
+        "original_score": 0.25,
+        "corrected_score": 0.3976770411756208
+      },
+      {
+        "original_score": 0.5,
+        "corrected_score": 0.7392727199417546
+      },
+      {
+        "original_score": 0.75,
+        "corrected_score": 0.9241093854840582
+      },
+      {
+        "original_score": 0.9,
+        "corrected_score": 0.9812361851622056
+      },
+      {
+        "original_score": 0.95,
+        "corrected_score": 0.9929530431538744
+      },
+      {
+        "original_score": 0.99,
+        "corrected_score": 0.9992061090216369
+      }
+    ]
+  }
+}

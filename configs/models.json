@@ -1,0 +1,71 @@
+{
+  "yolo26n": {
+    "adapter": "ultralytics",
+    "input_size": 640,
+    "weight": "weights/yolo26n.pt",
+    "checkpoint_url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt",
+    "packages": {
+      "ultralytics": "8.4.174"
+    },
+    "architecture_date": "2026-01-14",
+    "architecture_source": "https://docs.ultralytics.com/models/yolo26/",
+    "checkpoint_date": null,
+    "suppression": "native end-to-end, nms=False"
+  },
+  "yolo11n": {
+    "adapter": "ultralytics",
+    "input_size": 640,
+    "weight": "weights/yolo11n.pt",
+    "checkpoint_url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+    "packages": {
+      "ultralytics": "8.4.174"
+    },
+    "architecture_date": "2024-09-27",
+    "architecture_source": "https://docs.ultralytics.com/models/yolo11/",
+    "checkpoint_date": null,
+    "suppression": "native classwise NMS IoU 0.7"
+  },
+  "rfdetr_nano": {
+    "adapter": "rfdetr",
+    "input_size": 384,
+    "weight": "weights/rf-detr-nano.pth",
+    "checkpoint_url": "https://storage.googleapis.com/rfdetr/nano_coco/checkpoint_best_regular.pth",
+    "packages": {
+      "rfdetr": "1.11.2"
+    },
+    "architecture_date": "2025-03",
+    "architecture_source": "https://github.com/roboflow/rf-detr",
+    "checkpoint_date": null,
+    "suppression": "native query top-k; no NMS"
+  },
+  "yolox_s": {
+    "adapter": "yolox",
+    "input_size": 640,
+    "weight": "weights/yolox_s.pth",
+    "checkpoint_url": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth",
+    "packages": {},
+    "architecture_date": "2021-07",
+    "architecture_source": "https://arxiv.org/abs/2107.08430",
+    "checkpoint_date": null,
+    "repo_url": "https://github.com/Megvii-BaseDetection/YOLOX.git",
+    "repo_ref": "0.3.0",
+    "repo_dir": "external/YOLOX",
+    "suppression": "native classwise NMS exp.nmsthre"
+  },
+  "yolov3": {
+    "adapter": "darknet",
+    "input_size": 416,
+    "weight": "weights/yolov3.weights",
+    "checkpoint_url": "https://data.pjreddie.com/files/yolov3.weights",
+    "packages": {},
+    "architecture_date": "2018-04",
+    "architecture_source": "https://arxiv.org/abs/1804.02767",
+    "checkpoint_date": null,
+    "repo_url": "https://github.com/AlexeyAB/darknet.git",
+    "repo_ref": "master",
+    "repo_dir": "external/darknet",
+    "config_file": "weights/yolov3-416.cfg",
+    "data_file": "weights/coco.data",
+    "suppression": "native Darknet classwise NMS 0.45"
+  }
+}

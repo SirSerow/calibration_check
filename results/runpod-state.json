@@ -1,0 +1,33 @@
+{
+  "pods": [
+    {
+      "id": "x189pswgwcbf6j",
+      "created_at": 1791304346.031326,
+      "hourly_usd": 0.2311111111111111,
+      "quote": {
+        "gpu_id": "NVIDIA GeForce RTX 3090",
+        "gpu_hourly_usd": 0.22,
+        "storage": {
+          "source": "https://docs.runpod.io/pods/pricing.md",
+          "retrieved_at": 1791304343.8808968,
+          "rates_usd_gb_month": {
+            "container": 0.1,
+            "volume": 0.1
+          },
+          "container_gb": 80,
+          "volume_gb": 0,
+          "hourly_usd": 0.011111111111111112
+        },
+        "total_hourly_usd": 0.2311111111111111,
+        "stock": "Low",
+        "cloud": "COMMUNITY",
+        "retrieved_at": 1791304344.4628603
+      },
+      "server_terminate_at": "2026-10-07T18:09:22.904907+00:00",
+      "actual_compute_hourly_usd": 0.22,
+      "terminated_at": 1791310874.1096067
+    }
+  ],
+  "budget_usd": 10,
+  "reserve_usd": 1
+}

@@ -1,0 +1,67 @@
+{
+  "models": {
+    "yolo26n": {
+      "artifacts": {
+        "weights/yolo26n.pt": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "repository_revision": null,
+      "checkpoint_url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt"
+    },
+    "yolo11n": {
+      "artifacts": {
+        "weights/yolo11n.pt": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+      },
+      "repository_revision": null,
+      "checkpoint_url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt"
+    },
+    "rfdetr_nano": {
+      "artifacts": {
+        "weights/rf-detr-nano.pth": "d8d6b9ee57d4d0ed2b1f305163624712a0532cb7bce0c747317984fc5457440d"
+      },
+      "repository_revision": null,
+      "checkpoint_url": "https://storage.googleapis.com/rfdetr/nano_coco/checkpoint_best_regular.pth"
+    },
+    "yolox_s": {
+      "artifacts": {
+        "weights/yolox_s.pth": "f55ded7181e1b0c13285c56e7790b8f0e8f8db590fe4edb37f0b7f345c913a30"
+      },
+      "repository_revision": "419778480ab6ec0590e5d3831b3afb3b46ab2aa3",
+      "checkpoint_url": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth"
+    },
+    "picodet_s": {
+      "artifacts": {
+        "weights/picodet_s_416_coco_lcnet_non_postprocess/model.pdmodel": "f41ac41f83a8e1fef02d01c90308824dedb479835eaf2de9033461cb09697278",
+        "weights/picodet_s_416_coco_lcnet_non_postprocess/infer_cfg.yml": "271e3a4cda3153d34238f4e814f7452e1b7cdeb72f5b786bea26e4e73aac8f80",
+        "weights/picodet_s_416_coco_lcnet_non_postprocess/model.pdiparams.info": "c4676404c6a75281d5a5c060045c08feaa647f04fb62b6d756bf90b21528e7f3",
+        "weights/picodet_s_416_coco_lcnet_non_postprocess/model.pdiparams": "9c32db6d6669ee2f2a2a5ee894947f0f0626cbf82176f3d9fb27bda05eb111d7"
+      },
+      "repository_revision": "7a4fc2578e9542d94df12907c10ec3b449be5f1e",
+      "checkpoint_url": "https://paddledet.bj.bcebos.com/deploy/Inference/picodet_s_416_coco_lcnet_non_postprocess.tar"
+    },
+    "rtmdet_tiny": {
+      "artifacts": {
+        "weights/rtmdet_tiny.pth": "78e30dcce0c6f594eaff0d6977b84b4103688b4aff0ad1aa16008a8cc854a7fb",
+        "external/mmdetection/configs/rtmdet/rtmdet_tiny_8xb32-300e_coco.py": "873923f8221c2e5ae6501dae248eddf26743daeccb82ae9055cb6435fcabc992"
+      },
+      "repository_revision": "44ebd17b145c2372c4b700bfb9cb20dbd28ab64a",
+      "checkpoint_url": "https://download.openmmlab.com/mmdetection/v3.0/rtmdet/rtmdet_tiny_8xb32-300e_coco/rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth"
+    },
+    "ssd300": {
+      "artifacts": {
+        "weights/ssd300_vgg16.pth": "b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d"
+      },
+      "repository_revision": null,
+      "checkpoint_url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth"
+    },
+    "yolov3": {
+      "artifacts": {
+        "weights/yolov3.weights": "523e4e69e1d015393a1b0a441cef1d9c7659e3eb2d7e15f793f060a21b32f297",
+        "weights/yolov3-416.cfg": "370c7b08d2350fd105a79af9b106c02217d659cd2a5c1e8319a65fa4ced610fa",
+        "weights/coco.names": "634a1132eb33f8091d60f2c346ababe8b905ae08387037aed883953b7329af84",
+        "weights/coco.data": "65b4955306de72a2be60d9f153794de8bfdc44a3bed4f0d3e18ccada980c9447"
+      },
+      "repository_revision": "59596d7880f6504768df41d6daa586f5cb2b932f",
+      "checkpoint_url": "https://data.pjreddie.com/files/yolov3.weights"
+    }
+  }
+}

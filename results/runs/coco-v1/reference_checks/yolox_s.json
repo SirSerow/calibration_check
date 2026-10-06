@@ -1,0 +1,21 @@
+{
+  "model_id": "yolox_s",
+  "passed": true,
+  "native_reference": "native package API; independent class mapping and serialization",
+  "images": [
+    {
+      "image_id": 139,
+      "comparison_threshold": 0.001,
+      "detections": 100,
+      "maximum_box_error_pixels": 0.0,
+      "maximum_score_error": 0.0
+    },
+    {
+      "image_id": 285,
+      "comparison_threshold": 0.001,
+      "detections": 1,
+      "maximum_box_error_pixels": 0.0,
+      "maximum_score_error": 0.0
+    }
+  ]
+}

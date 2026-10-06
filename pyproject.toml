@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "model-calibration"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "matplotlib==3.10.3", "pycocotools==2.0.10"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.1"]
+
+[project.scripts]
+calibrate-detectors = "model_calibration.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

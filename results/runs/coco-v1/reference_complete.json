@@ -1,0 +1,10 @@
+{
+  "models": [
+    "yolo26n",
+    "yolo11n",
+    "rfdetr_nano",
+    "yolox_s",
+    "yolov3"
+  ],
+  "completed_at": 1791310762.6888459
+}

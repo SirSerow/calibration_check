@@ -1,0 +1,6 @@
+{
+  "tag": "runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04",
+  "digest": "sha256:61a4aafb0094cd773f11eefa378929d5a687bd775febeb78eac62fc824141fb5",
+  "verified_source": "https://hub.docker.com/v2/repositories/runpod/pytorch/tags?name=2.4.0&page_size=20",
+  "verified_date": "2026-10-07"
+}

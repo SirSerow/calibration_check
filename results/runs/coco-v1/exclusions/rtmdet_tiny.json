@@ -1,0 +1,265 @@
+{
+  "model_id": "rtmdet_tiny",
+  "reason": "User requested exclusion due to slow inference, before selection and calibration",
+  "recorded_at": 1791310335.0515778,
+  "previous_protocol_hash": "2b10507a447e7c80bd9003f663211af04baa2984bbc6ff534687c391bd1a04e3",
+  "protocol_hash": "1508815895aac2becd008a0a7a02dfdb398439e67e9fefa7b918c7eb8f4c54da",
+  "former_registry_entry": {
+    "adapter": "rtmdet",
+    "input_size": 640,
+    "weight": "weights/rtmdet_tiny.pth",
+    "checkpoint_url": "https://download.openmmlab.com/mmdetection/v3.0/rtmdet/rtmdet_tiny_8xb32-300e_coco/rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth",
+    "packages": {
+      "mmdet": "3.3.0",
+      "mmcv": "2.1.0"
+    },
+    "architecture_date": "2022-12",
+    "architecture_source": "https://arxiv.org/abs/2212.07784",
+    "checkpoint_date": null,
+    "repo_url": "https://github.com/open-mmlab/mmdetection.git",
+    "repo_ref": "v3.3.0",
+    "repo_dir": "external/mmdetection",
+    "config_file": "external/mmdetection/configs/rtmdet/rtmdet_tiny_8xb32-300e_coco.py",
+    "suppression": "native MMDetection test_cfg NMS"
+  },
+  "former_status": {
+    "status": "running",
+    "provenance": {
+      "checkpoint_sha256": "78e30dcce0c6f594eaff0d6977b84b4103688b4aff0ad1aa16008a8cc854a7fb",
+      "settings": {
+        "adapter": "rtmdet",
+        "input_size": 640,
+        "weight": "weights/rtmdet_tiny.pth",
+        "checkpoint_url": "https://download.openmmlab.com/mmdetection/v3.0/rtmdet/rtmdet_tiny_8xb32-300e_coco/rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth",
+        "packages": {
+          "mmdet": "3.3.0",
+          "mmcv": "2.1.0"
+        },
+        "architecture_date": "2022-12",
+        "architecture_source": "https://arxiv.org/abs/2212.07784",
+        "checkpoint_date": null,
+        "repo_url": "https://github.com/open-mmlab/mmdetection.git",
+        "repo_ref": "v3.3.0",
+        "repo_dir": "external/mmdetection",
+        "config_file": "external/mmdetection/configs/rtmdet/rtmdet_tiny_8xb32-300e_coco.py",
+        "suppression": "native MMDetection test_cfg NMS"
+      },
+      "lock": {
+        "artifacts": {
+          "weights/rtmdet_tiny.pth": "78e30dcce0c6f594eaff0d6977b84b4103688b4aff0ad1aa16008a8cc854a7fb",
+          "external/mmdetection/configs/rtmdet/rtmdet_tiny_8xb32-300e_coco.py": "873923f8221c2e5ae6501dae248eddf26743daeccb82ae9055cb6435fcabc992"
+        },
+        "repository_revision": "44ebd17b145c2372c4b700bfb9cb20dbd28ab64a",
+        "checkpoint_url": "https://download.openmmlab.com/mmdetection/v3.0/rtmdet/rtmdet_tiny_8xb32-300e_coco/rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth"
+      },
+      "packages": [
+        [
+          "Jinja2",
+          "3.1.6"
+        ],
+        [
+          "MarkupSafe",
+          "3.0.3"
+        ],
+        [
+          "PyYAML",
+          "6.0.3"
+        ],
+        [
+          "Pygments",
+          "2.21.0"
+        ],
+        [
+          "addict",
+          "2.4.0"
+        ],
+        [
+          "certifi",
+          "2022.12.7"
+        ],
+        [
+          "charset-normalizer",
+          "2.1.1"
+        ],
+        [
+          "contourpy",
+          "1.3.3"
+        ],
+        [
+          "cycler",
+          "0.12.1"
+        ],
+        [
+          "filelock",
+          "3.32.3"
+        ],
+        [
+          "fonttools",
+          "4.66.1"
+        ],
+        [
+          "fsspec",
+          "2026.7.0"
+        ],
+        [
+          "idna",
+          "3.4"
+        ],
+        [
+          "kiwisolver",
+          "1.5.1"
+        ],
+        [
+          "markdown-it-py",
+          "4.2.0"
+        ],
+        [
+          "matplotlib",
+          "3.10.3"
+        ],
+        [
+          "mdurl",
+          "0.1.2"
+        ],
+        [
+          "mmcv",
+          "2.1.0"
+        ],
+        [
+          "mmdet",
+          "3.3.0"
+        ],
+        [
+          "mmengine",
+          "0.10.7"
+        ],
+        [
+          "mpmath",
+          "1.3.0"
+        ],
+        [
+          "networkx",
+          "3.6.1"
+        ],
+        [
+          "numpy",
+          "1.26.4"
+        ],
+        [
+          "opencv-python",
+          "4.11.0.86"
+        ],
+        [
+          "packaging",
+          "26.3"
+        ],
+        [
+          "pillow",
+          "12.3.0"
+        ],
+        [
+          "pip",
+          "25.1.1"
+        ],
+        [
+          "platformdirs",
+          "4.12.3"
+        ],
+        [
+          "pycocotools",
+          "2.0.10"
+        ],
+        [
+          "pyparsing",
+          "3.3.3"
+        ],
+        [
+          "python-dateutil",
+          "2.9.0.post0"
+        ],
+        [
+          "requests",
+          "2.28.1"
+        ],
+        [
+          "rich",
+          "15.0.0"
+        ],
+        [
+          "scipy",
+          "1.15.3"
+        ],
+        [
+          "setuptools",
+          "80.9.0"
+        ],
+        [
+          "shapely",
+          "2.1.2"
+        ],
+        [
+          "six",
+          "1.17.0"
+        ],
+        [
+          "sympy",
+          "1.14.0"
+        ],
+        [
+          "termcolor",
+          "3.3.0"
+        ],
+        [
+          "terminaltables",
+          "3.1.10"
+        ],
+        [
+          "torch",
+          "2.1.0+cu118"
+        ],
+        [
+          "torchvision",
+          "0.16.0+cu118"
+        ],
+        [
+          "tqdm",
+          "4.70.1"
+        ],
+        [
+          "triton",
+          "2.1.0"
+        ],
+        [
+          "typing_extensions",
+          "4.16.0"
+        ],
+        [
+          "urllib3",
+          "1.26.13"
+        ],
+        [
+          "wheel",
+          "0.45.1"
+        ],
+        [
+          "yapf",
+          "0.43.0"
+        ]
+      ],
+      "hardware": {
+        "platform": "linux",
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "cuda": "11.8"
+      },
+      "precision": "FP32",
+      "adapter_source_sha256": "aa7c23d19331354196e0e37ecfeda13b5989c4370c90db048d05bed514e0078f"
+    },
+    "completed_images": 50,
+    "elapsed_seconds": 42.65867009898648
+  },
+  "excluded_prediction_shards": 2327,
+  "reused_shards_count": 25000,
+  "reused_shards_audit": "logs/exclusion-shard-hashes-1791310334.json",
+  "reused_shards_audit_sha256": "663b9b734be8e66e3b50e45e6a89983ff3fa1d7f8c5e3d190ee071322c71eee1"
+}

@@ -1,0 +1,36 @@
+{
+  "model_id": "yolo26n",
+  "ranking": [
+    {
+      "model_id": "yolo26n",
+      "ece": 0.16654603941000884,
+      "nll": 0.4853612655124387,
+      "ci": [
+        0.15482781564926743,
+        0.17998847692083625
+      ]
+    },
+    {
+      "model_id": "yolo11n",
+      "ece": 0.13283473981022131,
+      "nll": 0.49550424437991286,
+      "ci": [
+        0.1204398692955736,
+        0.14646820855933756
+      ]
+    },
+    {
+      "model_id": "rfdetr_nano",
+      "ece": 0.09586257610739231,
+      "nll": 0.4587444384704066,
+      "ci": [
+        0.08731659061741759,
+        0.10381566782750205
+      ]
+    }
+  ],
+  "overlapping_ece_intervals": [],
+  "protocol_hash": "1508815895aac2becd008a0a7a02dfdb398439e67e9fefa7b918c7eb8f4c54da",
+  "selection_summary_hash": "7e95f2a01d656aa19097949936e64eacd957eb0a628a032740cacb4c1afd203c",
+  "criterion": "selection ECE descending; exact ties NLL descending, model ID ascending"
+}

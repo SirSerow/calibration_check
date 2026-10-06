@@ -1,0 +1,20 @@
+{
+  "publication_id": "6ac5198f755f8dfd2cdaa62b",
+  "images": {
+    "calibration_comparison": {
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/b10b38e2-73bb-4995-833c-41a832082267.png",
+      "sha256": "a0b16e1d87a3a14a9961904efd111ed8f39eda48a15fbdbf1aebb741b3332675"
+    },
+    "correction": {
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/7e8fd363-d971-47a0-ac08-4cd8fd389726.png",
+      "sha256": "d634d765ceb3f00d0b62ed4701f3169f102eebee296088d1b13b1b20e5864b71"
+    },
+    "quality_vs_calibration": {
+      "url": "https://cdn.hashnode.com/uploads/gql/6aa596b1dbb924c85aec7a46/c2f065bf-b49c-437f-b353-3b670681d6f0.png",
+      "sha256": "1bb7ff4fa01629e39b7c3f17fb574760accd2394c577619ffc9c8c694e981f9b"
+    }
+  },
+  "draft_id": "6ac51af4b529b95499063e47",
+  "verified": true,
+  "content_hash": "121ef66c066e901e5c2225651bf8335b9089ccb33e830041d0b197f75491ba0d"
+}

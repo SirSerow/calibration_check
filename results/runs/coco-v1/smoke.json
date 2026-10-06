@@ -1,0 +1,51 @@
+{
+  "yolo26n": {
+    "images": 1781,
+    "pending_images": 3219,
+    "elapsed_seconds": 88.60240649298066,
+    "resume_seconds": 2.3856333139701746,
+    "estimated_full_seconds": 160.141014318307
+  },
+  "yolo11n": {
+    "images": 50,
+    "pending_images": 4950,
+    "elapsed_seconds": 12.813227467879187,
+    "resume_seconds": 2.4963675339822657,
+    "estimated_full_seconds": 1268.5095193200395
+  },
+  "rfdetr_nano": {
+    "images": 50,
+    "pending_images": 4950,
+    "elapsed_seconds": 45.678473984939046,
+    "resume_seconds": 8.061650187999476,
+    "estimated_full_seconds": 4522.168924508966
+  },
+  "yolox_s": {
+    "images": 50,
+    "pending_images": 4950,
+    "elapsed_seconds": 28.195601452025585,
+    "resume_seconds": 5.194021586969029,
+    "estimated_full_seconds": 2791.364543750533
+  },
+  "rtmdet_tiny": {
+    "images": 50,
+    "pending_images": 4950,
+    "elapsed_seconds": 42.65867009898648,
+    "resume_seconds": 5.046404886990786,
+    "estimated_full_seconds": 4223.208339799661
+  },
+  "ssd300": {
+    "images": 50,
+    "pending_images": 4950,
+    "elapsed_seconds": 69.56657805998111,
+    "resume_seconds": 5.5060800180071965,
+    "estimated_full_seconds": 6887.09122793813
+  },
+  "yolov3": {
+    "images": 50,
+    "pending_images": 4950,
+    "elapsed_seconds": 7.15035606600577,
+    "resume_seconds": 4.040450498985592,
+    "estimated_full_seconds": 707.8852505345712
+  }
+}

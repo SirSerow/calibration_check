@@ -1,0 +1,8 @@
+{
+  "library_sha256": "dbc90890bba05ea7e4f6f5e7373d7812c12f87a906161d5a3baf5a657e0b1c2e",
+  "makefile_sha256": "b777d7177b9865d8207739271fb5f0fda1451ed18fd016269cbeb74062c3a116",
+  "cuda_compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Mar_28_02:18:24_PDT_2024\nCuda compilation tools, release 12.4, V12.4.131\nBuild cuda_12.4.r12.4/compiler.34097967_0\n",
+  "gpu": true,
+  "cudnn": false,
+  "cudnn_half": false
+}

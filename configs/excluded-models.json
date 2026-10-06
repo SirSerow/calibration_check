@@ -1,0 +1,60 @@
+{
+  "picodet_s": {
+    "reason": "Excluded at user request after repeated GPU smoke-test failures",
+    "registry_entry": {
+      "adapter": "picodet",
+      "input_size": 416,
+      "weight": "weights/picodet_s_416_coco_lcnet_non_postprocess/model.pdmodel",
+      "checkpoint_url": "https://paddledet.bj.bcebos.com/deploy/Inference/picodet_s_416_coco_lcnet_non_postprocess.tar",
+      "packages": {
+        "paddlepaddle-gpu": "2.6.2"
+      },
+      "architecture_date": "2021-11",
+      "architecture_source": "https://arxiv.org/abs/2111.00902",
+      "checkpoint_date": null,
+      "archive": true,
+      "repo_url": "https://github.com/PaddlePaddle/PaddleDetection.git",
+      "repo_ref": "release/2.8",
+      "repo_dir": "external/PaddleDetection",
+      "suppression": "native PicoDetPostProcess with score_threshold 0.001"
+    }
+  },
+  "rtmdet_tiny": {
+    "reason": "Excluded at user request due to slow inference, before selection and calibration",
+    "registry_entry": {
+      "adapter": "rtmdet",
+      "input_size": 640,
+      "weight": "weights/rtmdet_tiny.pth",
+      "checkpoint_url": "https://download.openmmlab.com/mmdetection/v3.0/rtmdet/rtmdet_tiny_8xb32-300e_coco/rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth",
+      "packages": {
+        "mmdet": "3.3.0",
+        "mmcv": "2.1.0"
+      },
+      "architecture_date": "2022-12",
+      "architecture_source": "https://arxiv.org/abs/2212.07784",
+      "checkpoint_date": null,
+      "repo_url": "https://github.com/open-mmlab/mmdetection.git",
+      "repo_ref": "v3.3.0",
+      "repo_dir": "external/mmdetection",
+      "config_file": "external/mmdetection/configs/rtmdet/rtmdet_tiny_8xb32-300e_coco.py",
+      "suppression": "native MMDetection test_cfg NMS"
+    }
+  },
+  "ssd300": {
+    "reason": "Excluded at user request due to slow inference, before selection and calibration",
+    "registry_entry": {
+      "adapter": "ssd",
+      "input_size": 300,
+      "weight": "weights/ssd300_vgg16.pth",
+      "checkpoint_url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth",
+      "packages": {
+        "torchvision": "0.21.0",
+        "torch": "2.6.0"
+      },
+      "architecture_date": "2015-12",
+      "architecture_source": "https://arxiv.org/abs/1512.02325",
+      "checkpoint_date": null,
+      "suppression": "native torchvision NMS; score_thresh 0.001"
+    }
+  }
+}
