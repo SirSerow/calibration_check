@@ -1,8 +1,8 @@
 {
-  "completed_at": 1791328986.749673,
+  "completed_at": 1791330030.8263505,
   "reporting_sha256": "8e9018f857c87bd7d8ca7f9038d47745d6bb76052ad4916ace4778c5548564d3",
-  "template_sha256": "c4a7fbc6707e096ce4a761af592cacca0300eee6105f179378f9c3fae5f83dc9",
-  "article_sha256": "06b1f57d4abdc9bf457ceec85d2b2ccc9c650888af1e301d6bbab64a44124f73",
+  "template_sha256": "f4c9fb9884cefeb3e239ef6feab34e0e4566540673a7699d873e7ced5c4413b1",
+  "article_sha256": "61c0e20978e5f2dfdc9754dd4690e55bb2591663c13e24aeb0a942bdad1eba47",
   "summary_hash": "7e95f2a01d656aa19097949936e64eacd957eb0a628a032740cacb4c1afd203c",
   "correction_hash": "69cbd0c841f7dc3ddfe01d76f602c4ff0a46a5b15d316cd9f5c93231c735d072",
   "correction_figure_sha256": "19bc345b11790f13564579c8db740bb0db51ac1169f96af97d72caa9014b04df",

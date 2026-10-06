@@ -1,4 +1,4 @@
-# Can you trust an object detector’s confidence?
+# Should you trust an object detector’s confidence?
 
 An object detector draws a box around an object, names it, and gives it a confidence score. A score of 0.90 sounds like a 90% chance of being right. But does the detector actually get about nine out of ten similar predictions right? That can be checked against labeled images.
 
@@ -34,7 +34,7 @@ Expected calibration error, or ECE, gives one summary of the mismatch. Scores ar
 
 Why might this happen? Guo linked poorer calibration to larger networks, batch normalization, and weaker penalties on large weights. Training can also increase confidence without improving correctness. These are possible explanations, not proven causes here: model sizes and training differ. Guo’s newer classifiers were often overconfident; YOLO26n was underconfident. The similar pattern concerns calibration error, not the direction of the score mismatch.
 
-Confidence intervals in the full tables come from 1,000 samples drawn by image, keeping all detections from each image together. Nearby estimates should be treated cautiously. Extra checks change the score threshold, overlap requirement, and number of groups. The [full methodology and tables]({{methodology}}) also include recall, negative log likelihood, and Brier score. The latter two measure probability errors in other ways, so the conclusion does not depend only on ECE.
+Confidence intervals in the full tables come from 1,000 samples drawn by image, keeping all detections from each image together. Nearby estimates should be treated cautiously. Extra checks change the score threshold, overlap requirement, and number of groups. The analysis also includes recall, negative log likelihood, and Brier score. The latter two measure probability errors in other ways, so the conclusion does not depend only on ECE.
 
 ![Before calibration: detection quality versus calibration error, using each model’s original scores.]({{figure_prefix}}/quality_vs_calibration.png)
 
